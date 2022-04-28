@@ -1,19 +1,16 @@
+import 'package:catalog/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  //har flutter file ka ek main function hota hai.
+  runApp(MyApp()); //run app ek method hai
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Material(
-            child: Center(
-                child: Container(
-      child: Text("Hello Kanti"),
-    ))));
+      home: HomePage(),
+    );
   }
 }
